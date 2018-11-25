@@ -10,6 +10,7 @@ async function checkout() {
       label: 'Total',
       amount: { currency: 'USD', value: 10 },
     },
+    displayItems: allDisplayItems,
   };
 
   const request = new PaymentRequest(supportedPaymentMethods, paymentDetails);
@@ -29,3 +30,27 @@ async function checkout() {
 
   // More: https://developers.google.com/web/fundamentals/payments/merchant-guide/deep-dive-into-payment-request
 }
+
+const allDisplayItems = [
+  {
+    label: 'Subtotal',
+    amount: {
+      currency: 'USD',
+      value: 10,
+    },
+  },
+  {
+    label: 'Discount (10%)',
+    amount: {
+      currency: 'USD',
+      value: -1,
+    },
+  },
+  {
+    label: 'Tax',
+    amount: {
+      currency: 'USD',
+      value: 0.68,
+    },
+  },
+];
