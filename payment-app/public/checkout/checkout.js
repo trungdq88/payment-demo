@@ -10,7 +10,7 @@ navigator.serviceWorker.controller.postMessage('payment_app_window_ready');
 function onPay() {
   if (!client) return;
   const response = {
-    methodName: 'https://d5b3b805.ngrok.io/pay',
+    methodName: 'https://localhost:5999/pay',
     details: { id: '123456' },
   };
   client.postMessage(response);

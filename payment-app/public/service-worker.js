@@ -1,4 +1,4 @@
-const origin = 'https://d5b3b805.ngrok.io';
+const origin = 'https://localhost:5999';
 const methodName = `${origin}/pay`;
 const checkoutURL = `${origin}/checkout`;
 let resolver;

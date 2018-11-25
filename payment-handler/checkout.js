@@ -17,7 +17,7 @@ async function checkout() {
     //   },
     // },
     // { supportedMethods: 'https://bobpay.xyz/pay' },
-    { supportedMethods: 'https://d5b3b805.ngrok.io/pay' },
+    { supportedMethods: 'https://localhost:5999/pay' },
     // {
     //   supportedMethods: 'https://google.com/pay',
     //   data: googlePaymentDataRequest,

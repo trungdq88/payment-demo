@@ -4,7 +4,7 @@ var app = express();
 // All of our paths have the Link header.
 app.use(function(req, res, next) {
   res.status(200).links({
-    'payment-method-manifest': 'https://d5b3b805.ngrok.io/payment-manifest.json',
+    'payment-method-manifest': 'https://localhost:5999/payment-manifest.json',
   });
   return next();
 });

@@ -17,7 +17,7 @@ async function register() {
       // Payment instrument detail
       {
         name: 'beePay',
-        method: 'https://d5b3b805.ngrok.io/pay',
+        method: 'https://localhost:5999/pay',
       },
     );
   }
